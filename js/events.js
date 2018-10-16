@@ -1,7 +1,13 @@
-//define functions here
+function getIt(){
+  alert('Hey!');
+}
 
-$(document).ready(function(){
+$('p').on('click', getIt);
 
-// call functions here
-
+$('img').on('load', function(){
+  //actions you want to happen
+  
+ // this is where you want to add the classname
+ $('img').addClass("tasty");
+ 
 });
