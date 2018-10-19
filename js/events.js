@@ -4,10 +4,38 @@ function getIt(){
 
 $('p').on('click', getIt);
 
+
 $('img').on('load', function(){
-  //actions you want to happen
   
- // this is where you want to add the classname
  $('img').addClass("tasty");
  
 });
+
+function frameIt(){
+  
+ return $('img').addClass('tasty');
+ 
+}
+
+$('img').on('load', frameIt);
+
+
+function pressIt(){
+  
+  $(document).on('keydown', function(key){
+    if(key.which == 71){
+      alert('the G key was pressed down');
+    }
+  });
+  
+}
+
+
+function submitIt(){
+  $('form').on('submit', function(){
+    alert('Your form is going to be submitted now.');
+  })
+}
+
+
+
