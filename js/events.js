@@ -6,9 +6,7 @@ $('p').on('click', getIt);
 
 
 $('img').on('load', function(){
-  //actions you want to happen
   
- // this is where you want to add the classname
  $('img').addClass("tasty");
  
 });
@@ -20,4 +18,17 @@ function frameIt(){
 }
 
 $('img').on('load', frameIt);
+
+
+function pressIt(){
+  
+  $('form').on('keydown', function(){
+    if($('input').val() === 'G'){
+      alert('the G key was pressed down');
+    }
+  })
+  
+}
+
+
 
