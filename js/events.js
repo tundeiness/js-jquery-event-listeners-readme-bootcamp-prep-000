@@ -22,13 +22,10 @@ $('img').on('load', frameIt);
 
 function pressIt(){
   
-  $('form').on('keydown', function(){
-    if($('input:first').val() == 'G'){
+  $(document).on('keydown', function(key){
+    if(key.which == 71){
       alert('the G key was pressed down');
-      return;
     }
-    alert("you entered the wrong key");
-  return;
   });
   
 }
