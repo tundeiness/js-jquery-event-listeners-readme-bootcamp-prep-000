@@ -15,8 +15,7 @@ $('img').on('load', function(){
 
 function frameIt(){
   
- let element = document.getElementsByTagName('img');
- return   element.className += "tasty";
+ return $('img').addClass('tasty');
  
 }
 
