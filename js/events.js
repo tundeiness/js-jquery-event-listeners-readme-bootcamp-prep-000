@@ -4,6 +4,7 @@ function getIt(){
 
 $('p').on('click', getIt);
 
+<<<<<<< HEAD
 $('img').on('load', function(){
   //actions you want to happen
   
@@ -11,3 +12,13 @@ $('img').on('load', function(){
  $('img').addClass("tasty");
  
 });
+=======
+function frameIt(){
+  
+ let element = document.getElementsByTagName('img');
+ return   element.className += "tasty";
+ 
+}
+
+$('img').on('load', frameIt);
+>>>>>>> 3309544dc54ef409a9f87e99c2ac29ddd04147f9
