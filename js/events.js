@@ -23,8 +23,9 @@ $('img').on('load', frameIt);
 function pressIt(){
   
   $('form').on('keydown', function(){
-    if($('input').val() == 'G'){
+    if($('input:first').val() == 'G'){
       alert('the G key was pressed down');
+      return;
     }
   });
   
