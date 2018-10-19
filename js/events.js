@@ -27,6 +27,8 @@ function pressIt(){
       alert('the G key was pressed down');
       return;
     }
+    alert("you entered the wrong key");
+  return;
   });
   
 }
